@@ -1,0 +1,92 @@
+{
+  "model_name": "Random Forest (default)",
+  "baseline_name": "KNN (baseline)",
+  "classes": [
+    "apple",
+    "banana",
+    "blackgram",
+    "chickpea",
+    "coconut",
+    "coffee",
+    "cotton",
+    "grapes",
+    "jute",
+    "kidneybeans",
+    "lentil",
+    "maize",
+    "mango",
+    "mothbeans",
+    "mungbean",
+    "muskmelon",
+    "orange",
+    "papaya",
+    "pigeonpeas",
+    "pomegranate",
+    "rice",
+    "watermelon"
+  ],
+  "features": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall"
+  ],
+  "training_ranges": {
+    "N": [
+      0.0,
+      140.0
+    ],
+    "P": [
+      5.0,
+      145.0
+    ],
+    "K": [
+      5.0,
+      205.0
+    ],
+    "temperature": [
+      8.825674745,
+      43.36051537
+    ],
+    "humidity": [
+      14.25803981,
+      99.98187601
+    ],
+    "ph": [
+      3.504752314,
+      9.93509073
+    ],
+    "rainfall": [
+      20.21126747,
+      298.5601175
+    ]
+  },
+  "feature_importance": {
+    "humidity": 0.2806392574758451,
+    "N": 0.21568414550683,
+    "rainfall": 0.19856961758534436,
+    "P": 0.15701104610304742,
+    "K": 0.1350952568312605,
+    "ph": 0.00798034334142156,
+    "temperature": 0.005020333156251052
+  },
+  "low_confidence_threshold": 0.5,
+  "sklearn_version": "1.9.1",
+  "test_metrics": {
+    "macro_f1": 0.9969663262210537,
+    "accuracy": 0.996969696969697,
+    "min_class_recall": 0.9333333333333333,
+    "worst_class": "rice",
+    "top3_accuracy": 1.0
+  },
+  "baseline_test_metrics": {
+    "macro_f1": 0.9723996379655445,
+    "accuracy": 0.9727272727272728,
+    "min_class_recall": 0.8,
+    "worst_class": "orange",
+    "top3_accuracy": 0.996969696969697
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "final_model": "Random Forest (default)",
+  "baseline": "KNN (baseline)",
+  "validation_table": [
+    {
+      "model": "Gaussian Naive Bayes",
+      "macro_f1": 0.9939,
+      "accuracy": 0.9939,
+      "min_class_recall": 0.9333,
+      "worst_class": "lentil",
+      "top3_accuracy": 1.0,
+      "cv_macro_f1": 0.9948,
+      "cv_std": 0.0039
+    },
+    {
+      "model": "Random Forest + NPK ratios",
+      "macro_f1": 0.9939,
+      "accuracy": 0.9939,
+      "min_class_recall": 0.9333,
+      "worst_class": "blackgram",
+      "top3_accuracy": 1.0,
+      "cv_macro_f1": 0.9935,
+      "cv_std": 0.0046
+    },
+    {
+      "model": "Random Forest (default)",
+      "macro_f1": 0.9909,
+      "accuracy": 0.9909,
+      "min_class_recall": 0.9333,
+      "worst_class": "blackgram",
+      "top3_accuracy": 1.0,
+      "cv_macro_f1": 0.9954,
+      "cv_std": 0.0033
+    },
+    {
+      "model": "Random Forest (tuned)",
+      "macro_f1": 0.9909,
+      "accuracy": 0.9909,
+      "min_class_recall": 0.9333,
+      "worst_class": "blackgram",
+      "top3_accuracy": 1.0,
+      "cv_macro_f1": 0.9941,
+      "cv_std": 0.0038
+    },
+    {
+      "model": "SVM (default, calibrated)",
+      "macro_f1": 0.9909,
+      "accuracy": 0.9909,
+      "min_class_recall": 0.8667,
+      "worst_class": "rice",
+      "top3_accuracy": 1.0,
+      "cv_macro_f1": 0.9749,
+      "cv_std": 0.01
+    },
+    {
+      "model": "SVM (tuned, calibrated)",
+      "macro_f1": 0.9879,
+      "accuracy": 0.9879,
+      "min_class_recall": 0.8667,
+      "worst_class": "rice",
+      "top3_accuracy": 1.0,
+      "cv_macro_f1": 0.9843,
+      "cv_std": 0.0082
+    },
+    {
+      "model": "KNN (baseline)",
+      "macro_f1": 0.9848,
+      "accuracy": 0.9848,
+      "min_class_recall": 0.8667,
+      "worst_class": "rice",
+      "top3_accuracy": 1.0,
+      "cv_macro_f1": 0.964,
+      "cv_std": 0.0088
+    },
+    {
+      "model": "Decision Tree (baseline)",
+      "macro_f1": 0.9755,
+      "accuracy": 0.9758,
+      "min_class_recall": 0.8,
+      "worst_class": "mothbeans",
+      "top3_accuracy": 0.9788,
+      "cv_macro_f1": 0.9837,
+      "cv_std": 0.0109
+    }
+  ],
+  "test_final": {
+    "macro_f1": 0.9969663262210537,
+    "accuracy": 0.996969696969697,
+    "min_class_recall": 0.9333333333333333,
+    "worst_class": "rice",
+    "top3_accuracy": 1.0
+  },
+  "test_baseline": {
+    "macro_f1": 0.9723996379655445,
+    "accuracy": 0.9727272727272728,
+    "min_class_recall": 0.8,
+    "worst_class": "orange",
+    "top3_accuracy": 0.996969696969697
+  },
+  "bootstrap_gain_ci": [
+    0.009203942984990065,
+    0.04521954523083265
+  ],
+  "cv_full_data": [
+    0.9954482829964217,
+    0.003217343386182147
+  ],
+  "misclassified": 1,
+  "n_test": 330,
+  "noise_robustness": [
+    {
+      "noise (fraction of feature std)": 0.0,
+      "test accuracy": 0.997
+    },
+    {
+      "noise (fraction of feature std)": 0.05,
+      "test accuracy": 0.9858
+    },
+    {
+      "noise (fraction of feature std)": 0.1,
+      "test accuracy": 0.9592
+    },
+    {
+      "noise (fraction of feature std)": 0.2,
+      "test accuracy": 0.8645
+    },
+    {
+      "noise (fraction of feature std)": 0.3,
+      "test accuracy": 0.7424
+    }
+  ],
+  "latency_ms": 9.890081484999769,
+  "feature_importance": {
+    "humidity": 0.2806392574758451,
+    "N": 0.21568414550683,
+    "rainfall": 0.19856961758534436,
+    "P": 0.15701104610304742,
+    "K": 0.1350952568312605,
+    "ph": 0.00798034334142156,
+    "temperature": 0.005020333156251052
+  },
+  "class_separation_F": {
+    "K": 18967.05849624952,
+    "humidity": 2173.5503417383366,
+    "P": 1296.89697630924,
+    "N": 632.7172364673823,
+    "rainfall": 415.5692951829326,
+    "temperature": 72.68373942326356,
+    "ph": 43.619326074342084
+  },
+  "outliers_removed_vs_kept_val_f1": [
+    0.8752457837552385,
+    0.9908989786631611
+  ],
+  "train_outlier_rows": 304,
+  "rf_best_params": {
+    "clf__n_estimators": 500,
+    "clf__min_samples_split": 10,
+    "clf__min_samples_leaf": 2,
+    "clf__max_features": "log2",
+    "clf__max_depth": 20
+  },
+  "svm_best_params": {
+    "clf__estimator__C": 100,
+    "clf__estimator__gamma": 0.2
+  },
+  "use_ratio_features_for_tuning": false,
+  "tied_models": [
+    "Gaussian Naive Bayes",
+    "Random Forest + NPK ratios",
+    "Random Forest (default)",
+    "Random Forest (tuned)",
+    "SVM (default, calibrated)"
+  ]
+}

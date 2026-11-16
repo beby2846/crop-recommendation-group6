@@ -1,0 +1,36 @@
+=== Scenario A_stable (SIMULATED) ===
+    feature   psi  ks_stat  pct_outside_train_range status
+          N 0.032    0.029                      0.3     ok
+          P 0.030    0.032                      2.1     ok
+          K 0.023    0.050                      1.5     ok
+temperature 0.027    0.038                      0.0     ok
+   humidity 0.044    0.037                      0.3     ok
+         ph 0.023    0.039                      0.3     ok
+   rainfall 0.023    0.029                      0.0     ok
+  n_rows: 330
+  mean_confidence: 0.906
+  pct_low_confidence: 1.5
+  pct_rows_any_feature_outside_range: 4.5
+  n_distinct_crops_predicted: 22
+  accuracy: 0.9848
+  macro_f1: 0.9846
+  verdict: OK – no meaningful drift detected.
+
+=== Scenario B_drifted (SIMULATED) ===
+    feature   psi  ks_stat  pct_outside_train_range status
+          N 0.032    0.027                      0.0     ok
+          P 0.023    0.031                      0.0     ok
+          K 0.013    0.023                      0.0     ok
+temperature 1.233    0.471                      1.8  ALERT
+   humidity 2.217    0.400                      9.1  ALERT
+         ph 0.027    0.039                      0.0     ok
+   rainfall 1.385    0.395                      4.8  ALERT
+  n_rows: 330
+  mean_confidence: 0.569
+  pct_low_confidence: 41.5
+  pct_rows_any_feature_outside_range: 15.8
+  n_distinct_crops_predicted: 19
+  accuracy: 0.6424
+  macro_f1: 0.5838
+  verdict: RETRAIN REVIEW – significant drift or degraded performance: collect labelled data, re-evaluate, consider retraining.
+

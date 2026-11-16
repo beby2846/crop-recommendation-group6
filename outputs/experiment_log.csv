@@ -1,0 +1,7 @@
+model,val_macro_f1,val_accuracy,val_min_class_recall,val_top3_accuracy,cv_macro_f1,cv_std,test_macro_f1,test_accuracy,test_min_class_recall,test_top3_accuracy
+KNN (baseline),0.9848,0.9848,0.8667,1.0,0.964,0.0088,0.9724,0.9727,0.8,0.997
+Decision Tree (baseline),0.9755,0.9758,0.8,0.9788,0.9837,0.0109,,,,
+Random Forest (default),0.9909,0.9909,0.9333,1.0,0.9954,0.0033,0.997,0.997,0.9333,1.0
+Random Forest (tuned),0.9909,0.9909,0.9333,1.0,0.9941,0.0038,,,,
+"SVM (default, calibrated)",0.9909,0.9909,0.8667,1.0,0.9749,0.01,,,,
+Gaussian Naive Bayes,0.9939,0.9939,0.9333,1.0,0.9948,0.0039,,,,

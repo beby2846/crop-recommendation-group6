@@ -1,0 +1,8 @@
+feature,psi,ks_stat,ks_pvalue,ref_mean,new_mean,pct_outside_train_range,status
+N,0.032,0.027,0.984,50.46,51.0,0.0,ok
+P,0.023,0.031,0.944,53.29,53.96,0.0,ok
+K,0.013,0.023,0.999,48.13,48.38,0.0,ok
+temperature,1.233,0.471,3.07e-55,25.58,30.63,1.8,ALERT
+humidity,2.217,0.4,1.32e-39,71.44,59.51,9.1,ALERT
+ph,0.027,0.039,0.778,6.47,6.49,0.0,ok
+rainfall,1.385,0.395,1.78e-38,103.35,62.36,4.8,ALERT

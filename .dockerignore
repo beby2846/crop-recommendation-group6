@@ -1,0 +1,12 @@
+mlruns
+mlflow.db
+figures
+outputs
+screenshots
+logs
+tests
+*.ipynb
+*.docx
+*.zip
+__pycache__
+.venv

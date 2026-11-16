@@ -1,0 +1,28 @@
+case,result,warnings,expected,status
+Typical rice,"rice (94%), jute (6%), pomegranate (0%)",0,accepted,PASS
+Typical maize,"maize (100%), watermelon (0%), pomegranate (0%)",0,accepted,PASS
+Typical chickpea,"chickpea (100%), watermelon (0%), pomegranate (0%)",0,accepted,PASS
+Typical apple,"apple (100%), watermelon (0%), pomegranate (0%)",0,accepted,PASS
+Typical coffee,"coffee (99%), maize (1%), pomegranate (0%)",0,accepted,PASS
+Unseen test row (true: mango),"mango (100%), watermelon (0%), pomegranate (0%)",0,accepted,PASS
+Unseen test row (true: mothbeans),"mothbeans (98%), mungbean (2%), pomegranate (0%)",0,accepted,PASS
+Unseen test row (true: orange),"orange (99%), pomegranate (1%), rice (0%)",0,accepted,PASS
+Unseen test row (true: rice),"rice (95%), jute (3%), coconut (1%)",0,accepted,PASS
+Unseen test row (true: mungbean),"mungbean (100%), watermelon (0%), pomegranate (0%)",0,accepted,PASS
+All nutrients zero (N=P=K=0 is physically valid),"orange (31%), pigeonpeas (19%), mothbeans (15%)",3,accepted,PASS
+Maximum values seen in training,"apple (45%), banana (29%), papaya (12%)",1,accepted,PASS
+Minimum values seen in training,"kidneybeans (38%), muskmelon (30%), orange (10%)",1,accepted,PASS
+pH = 14 (valid but far outside training range),"coffee (98%), watermelon (1%), jute (1%)",1,accepted,PASS
+pH = 0.5 (valid but far outside training range),"coffee (89%), mango (3%), rice (2%)",1,accepted,PASS
+"Very dry plot, rainfall = 5 mm (outside training range)","muskmelon (49%), coffee (18%), maize (13%)",2,accepted,PASS
+Illustrative cool-highland profile (not from the dataset),"maize (35%), coffee (22%), jute (20%)",1,accepted,PASS
+Numbers supplied as text ('50'),"mango (30%), pigeonpeas (27%), coffee (15%)",1,accepted,PASS
+Humidity 120 % (impossible),"REJECTED: 'humidity'=120.0 is outside the valid range [0, 100].",0,rejected,PASS
+Negative rainfall,"REJECTED: 'rainfall'=-10.0 is outside the valid range [0, 1000].",0,rejected,PASS
+Negative nitrogen,"REJECTED: 'N'=-1.0 is outside the valid range [0, 500].",0,rejected,PASS
+pH 15 (impossible),"REJECTED: 'ph'=15.0 is outside the valid range [0, 14].",0,rejected,PASS
+Missing value (no pH),REJECTED: Missing value for 'ph'.,0,rejected,PASS
+Non-numeric input ('abc'),REJECTED: 'K' must be a number (got 'abc').,0,rejected,PASS
+NaN input,REJECTED: 'N' must be a finite number.,0,rejected,PASS
+Empty string input,REJECTED: Missing value for 'temperature'.,0,rejected,PASS
+Infinite input,REJECTED: 'rainfall' must be a finite number.,0,rejected,PASS
