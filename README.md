@@ -6,8 +6,11 @@ Given a plot's soil nutrients (N, P, K), soil pH and local climate (temperature,
 
 **GitHub repository:** https://github.com/beby2846/crop-recommendation-group6
 
-**Live app (Streamlit):** not deployed yet
+**Live app (Streamlit):** https://crop-recommender-group6.streamlit.app
 
+```
+Problem → Data → Analysis → Model → Evaluation → Testing → Working Prototype
+```
 
 ## Results at a glance (held-out test set, 330 rows)
 
@@ -105,7 +108,7 @@ docker build -t crop-recommender . && docker run -p 8000:8000 crop-recommender  
 
 **Simulated data statement.** The model uses **real** data (Kaggle Crop Recommendation). Simulated data are used **only** in the monitoring demo (`outputs/simulated_*.csv`), built from the held-out test rows to show that drift checks work. Results on them are not evidence of real-world performance. No passwords, keys or confidential data are included.
 
-**Not yet done:** public hosting (Streamlit Community Cloud link to be added here: _add link_), building the Docker image, a scheduled monitoring service.
+**Deployed:** the Streamlit app is live on Streamlit Community Cloud (link above; free apps sleep when idle, so click *Wake up* if asked). **Not yet done:** building the Docker image and a scheduled monitoring service.
 
 ## Data
 
