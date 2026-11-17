@@ -4,9 +4,10 @@
 
 Given a plot's soil nutrients (N, P, K), soil pH and local climate (temperature, humidity, rainfall), the system recommends the most suitable crop out of 22 candidates and shows the next two best alternatives with confidence scores. It is a **decision-support demo** to be confirmed with a local extension officer, not a validated advisory service.
 
-```
-Problem → Data → Analysis → Model → Evaluation → Testing → Working Prototype
-```
+**GitHub repository:** https://github.com/beby2846/crop-recommendation-group6
+
+**Live app (Streamlit):** not deployed yet
+
 
 ## Results at a glance (held-out test set, 330 rows)
 
